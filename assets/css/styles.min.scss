@@ -1,0 +1,12 @@
+@import "scss/googlefonts";
+/* Bootstrap Stuff */
+@import "scss/bootstrap";
+@import "scss/auxiliary-bootstrap";
+/* Main CSS */
+@import "scss/generic";
+@import "scss/navbars";
+@import "scss/content";
+@import "scss/footer";
+/* Media Queries */
+@import "scss/mediaquery-all-landscape";
+@import "scss/mediaquery-max-767";

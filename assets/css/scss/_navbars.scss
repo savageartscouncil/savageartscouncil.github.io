@@ -1,0 +1,49 @@
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  background-color: rgba(0,112,131,.75);
+  color: #fff;
+}
+.navbar-default {background-color:#fff;}
+.navbar-brand.artcrawl-brand,
+.logoPlaceholder {
+  background-image: url(/assets/images/SCAC-Logo.svg?c=t);
+}
+.navbar-brand.artcrawl-brand {
+  height:50px;
+  width:150px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 5px 8px;
+  /* background: url(/assets/images/SCAC-Logo-2014-web.png) no-repeat 5px 8px; */
+  background-size:90%;
+  padding:15px 5px;
+}
+.artcrawl-navbar .caret {
+  margin-top:-4px;
+}
+.navbar-collapse {
+  max-height: 300px;
+}
+.artcrawl-navbar {
+  font-size:16px;
+}
+.artcrawl-navbar-home > li > a {
+  font-size:18px;
+}
+.navbar-nav > li {
+  font-family: 'Overlock', cursive;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.home-layout .navbar-default {
+  margin-bottom:0;
+}
+.navbar-nav.artcrawl-navbar-home {
+  width:100%;
+  float:none;
+  margin:0 auto;
+  //display:none; //Removing the nav from home on large screens
+}
+.artcrawl-navbar-home > li {
+  width:50%; //One elements
+  text-align: center;
+}

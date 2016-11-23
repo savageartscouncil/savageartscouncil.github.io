@@ -1,0 +1,29 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font-size:18px;
+}
+body.home-layout {
+  padding-bottom:90px;
+}
+body.generic-layout {
+  padding-top:51px;
+  padding-bottom:90px;
+}
+a, .navbar-default .artcrawl-navbar-home.navbar-nav>li>a {
+  color:rgb(0,112,131);
+}
+a:hover, .navbar-default .artcrawl-navbar-home.navbar-nav>li>a:hover {
+  color:rgba(0,112,131,.75)
+}
+html,body,h1,h2,h3,h4,.jumbotron p {
+  font-family: 'Average Sans', Helvetica, Arial, sans-serif;
+}
+.crawl-locations li strong > span {
+  display: inline-block;
+  padding: 0 8px;
+  background-color: #828000;
+  color: #fff;
+}
