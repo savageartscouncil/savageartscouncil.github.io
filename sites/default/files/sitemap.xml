@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="//savageartscouncil.org/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://savageartscouncil.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://savageartscouncil.org/council/board-of-directors</loc></url>
+<url><loc>http://savageartscouncil.org/classes</loc></url>
+<url><loc>http://savageartscouncil.org/classes/open-studio</loc><lastmod>2016-03-06T20:15Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://savageartscouncil.org/classes/class-registration</loc><lastmod>2016-10-31T15:02Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://savageartscouncil.org/events/art-wall</loc></url>
+<url><loc>http://savageartscouncil.org/council/about-us</loc></url>
+<url><loc>http://savageartscouncil.org/events</loc></url>
+<url><loc>http://savageartscouncil.org/events/juried-art-show</loc></url>
+<url><loc>http://savageartscouncil.org/events/art-crawl</loc></url>
+<url><loc>http://savageartscouncil.org/council/membership</loc></url>
+<url><loc>http://savageartscouncil.org/artist-directory</loc></url>
+<url><loc>http://savageartscouncil.org/events/juried-art-show/application-inquiries-and-standards</loc></url>
+<url><loc>http://savageartscouncil.org/events/juried-art-show/award-winners-2014</loc></url>
+<url><loc>http://savageartscouncil.org/council/sponsor</loc></url>
+<url><loc>http://savageartscouncil.org/press-releases</loc></url>
+<url><loc>http://savageartscouncil.org/events/juried-art-show/award-winners-2016</loc></url>
+<url><loc>http://savageartscouncil.org/events/lux-string-quartet</loc></url>
+<url><loc>http://savageartscouncil.org/events/juried-art-show/schedule</loc></url>
+<url><loc>http://savageartscouncil.org/events/juried-art-show/categories-awards</loc></url>
+<url><loc>http://savageartscouncil.org/council/volunteer</loc></url>
+</urlset>
