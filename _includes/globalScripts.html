@@ -1,15 +1,6 @@
 
     <!-- GA -->
     {% include ga.html %}
-    <script>
-      function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/assets/js/scripts.min.js";
-      document.body.appendChild(element);
-      }
-      if (window.addEventListener)
-      window.addEventListener("load", downloadJSAtOnload, false);
-      else if (window.attachEvent)
-      window.attachEvent("onload", downloadJSAtOnload);
-      else window.onload = downloadJSAtOnload;
-    </script>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/scripts.js"></script>
