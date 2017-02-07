@@ -1,0 +1,38 @@
+.savage-arts-council-site {
+  
+  .artist-directory{
+    
+    .views-row {
+      padding: 1.0em 0 1.0em 0;
+      border-bottom: 1px solid #dedede;
+      overflow: hidden;
+      &:last-child {
+        border-bottom:none;
+      }
+      h3 {
+        margin:0;
+        display:inline-block;
+        float:left;
+      }
+      .artist-info {
+        overflow: hidden;
+        display:block;
+        float:left;
+        > span {
+          display:inline-block;
+          float:left;
+          clear:left;
+        }
+      }
+      .artist-image-wrapper {
+        //max-height:300px;
+        overflow:hidden;
+        img {
+          //max-width: 200px;
+          display:inline-block;
+          max-height: 195px;
+        }
+      }
+    }
+  }
+}

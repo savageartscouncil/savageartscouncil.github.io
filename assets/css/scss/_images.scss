@@ -1,0 +1,48 @@
+//general image treatment
+
+figure {
+  position:relative;
+  text-align:right;
+  > figcaption {
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 5px 10px;
+    margin: 0;
+    color:#ccc;
+    font-size:12px;
+    background-color:#555;
+    background-color:rgba(0,0,0,0.50);
+  }
+}
+.in-content-image {
+  float:right;
+  width:45%;
+  margin:0 0 10px 15px;
+  padding: 5px;
+  background-color: #eee;
+  &.left-aligned {
+    float:left;
+    margin: 0 15px 10px 0;
+  }
+  + figcaption {
+    margin: 5px 5px 0 0!important;
+    display:none;
+  }
+}
+
+.sponsors {
+  img {
+    display:block;
+    margin:0 auto 15px auto;
+    max-width:200px;
+  }
+  .mrac-legend {
+    margin-top:45px;
+    img {
+      width: 100px;
+      float:left;
+      margin:-10px 15px 0 0;
+    }
+  }
+}

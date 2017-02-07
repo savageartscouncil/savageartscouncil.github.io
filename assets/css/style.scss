@@ -1,0 +1,25 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+/* Bootstrap */
+@import "scss/bootstrap";
+
+/* Main CSS */
+@import "scss/colors";
+@import "scss/generic";
+@import "scss/navbars";
+@import "scss/content";
+@import "scss/footer";
+@import "scss/images";
+@import "scss/artist-directory";
+@import "scss/scroll-arrow";
+
+// Drupal Stuff
+@import "scss/drupal";
+
+//Media Queries 
+@import "scss/media-query-max-767";
+ 
+ //Fonts
+@import "scss/googlefonts";

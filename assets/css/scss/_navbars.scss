@@ -1,22 +1,142 @@
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
-  background-color: rgba(0,112,131,.75);
-  color: #fff;
+/*
+.savage-arts-council-site {
+  &.front {
+    .navbar-default {
+      .navbar-header {
+        width:100%;
+        .logo {
+          img {
+            width:640px;
+            height:auto;
+            max-width:100%;
+          }
+        }
+      }
+    }
+  }
 }
-.navbar-default {background-color:#fff;}
-.navbar-brand.artcrawl-brand,
-.logoPlaceholder {
-  background-image: url(/assets/images/SCAC-Logo.svg?c=t);
+*/
+.savage-arts-council-site .navbar-default {
+  background-color:rgba(255,255,255,1.0);
+  .navbar-collapse {
+    background-color:transparent;
+  }
+  .nav>li>a {
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .logo.navbar-btn {
+    margin:3px 10px 0 15px;
+    img {
+      width:190px;
+      height:45px;
+    }
+  }
+  .navbar-collapse.collapse {
+    .nav.navbar-nav {
+      float:right;
+    }
+  }
+  .navbar-collapse.collapsing, .navbar-collapse.in {
+    .nav.navbar-nav {
+      float:none;
+      margin:0 -15px;
+    }
+  }
+  .navbar-default .navbar-nav>.open>a,
+  .dropdown-menu>.active>a {
+    background-color: #eee;
+    color: $sac-blue-rgba;
+  }
+  .navbar-default .navbar-nav>li>a:hover,
+  .navbar-default .navbar-nav>li>a:focus,
+  .dropdown-menu>li>a:hover,
+  .dropdown-menu>li>a:focus {
+    background-color: $sac-blue-rgba;
+    color: #fff;
+  }
+  .navbar-nav >.first.leaf.active {
+    .active {
+      background-color:transparent;
+      &:hover {
+        color:$sac-blue;
+      }
+    }
+  }
+  .navbar-nav { 
+    > .dropdown > .active-trail,
+    > .active > .active-trail.active  {
+      background-color: #e7e7e7;
+    }
+    > li.leaf > a,
+    > li.dropdown > a,
+    > li ul a {
+      color:$sac-blue;
+      &:hover {
+        background-color:$sac-blue-rgba;
+        color:white;
+      }
+    }
+  }
+  .navbar-header {
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {background-color:transparent;}
+    .navbar-toggle {
+      padding:5px 10px;
+      font-size:17px;
+      font-weight: normal;
+      .glyphicon {
+        //padding: 2px 0 0 0; //On M#NU;
+        padding: 2px 0 0 0;
+        font-size: 14px;
+        line-height: 18px;
+        color:$sac-blue;
+      }
+      &.navbar-toggle-hover {
+        background-color:#ddd;
+      }
+    }
+  }
 }
-.navbar-brand.artcrawl-brand {
-  height:50px;
-  width:150px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: 5px 8px;
-  /* background: url(/assets/images/SCAC-Logo-2014-web.png) no-repeat 5px 8px; */
-  background-size:90%;
-  padding:15px 5px;
+#secondary-menu {
+  margin-top:25px;
 }
+#secondary-menu-links a.active,
+#secondary-menu-links .active-trail a.active-trail,
+#block-menu-menu-juried-art-menu a.active,
+#block-menu-menu-juried-art-menu .active-trail a.active-trail {
+  background-color: #eee;
+  color: $sac-blue-rgba;
+}
+#secondary-menu-links a:hover,
+#block-menu-menu-juried-art-menu a:hover {
+  background-color: $sac-blue-rgba;
+  color:#fff;
+}
+#block-menu-menu-juried-art-menu {
+  margin-top:30px;
+  a {
+    font-size:13px;
+    padding: 5px 10px;
+  }
+}
+/*
+  .navbar-default {background-color:#fff;}
+  .navbar-brand.artcrawl-brand,
+  .logoPlaceholder {
+    background-image: url(/assets/images/SCAC-Logo-2014-h.png);
+  }
+*/
+  .navbar-brand.artcrawl-brand {
+    height:50px;
+    width:150px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 5px 8px;
+    /* background: url(/assets/images/SCAC-Logo-2014-web.png) no-repeat 5px 8px; */
+    background-size:90%;
+    padding:15px 5px;
+  }
 .artcrawl-navbar .caret {
   margin-top:-4px;
 }
@@ -30,9 +150,8 @@
   font-size:18px;
 }
 .navbar-nav > li {
-  font-family: 'Overlock', cursive;
+  //font-family: 'Average Sans', sans-serif;
   font-weight: 300;
-  text-transform: uppercase;
 }
 .home-layout .navbar-default {
   margin-bottom:0;
@@ -41,9 +160,13 @@
   width:100%;
   float:none;
   margin:0 auto;
-  //display:none; //Removing the nav from home on large screens
 }
 .artcrawl-navbar-home > li {
-  width:50%; //One elements
+  width:25%;
   text-align: center;
+}
+
+//Secondary menu
+#secondary-menu-links {
+  li {font-size:15px;}
 }
