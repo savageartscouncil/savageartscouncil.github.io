@@ -84,7 +84,7 @@ module Jekyll
       <head>
       <link rel="canonical" href="#{destination_path}"/>
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      <meta http-equiv="refresh" content="0;url=#{destination_path}" />
+      <script>location.replace("#{destination_path}");</script>
       </head>
       </html>
       EOF
