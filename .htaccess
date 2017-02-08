@@ -1,0 +1,66 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^savageartscouncil.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.savageartscouncil.org [NC]
+RewriteRule ^(.*)$ http://savageartscouncil.org/$1 [L,R=301,NC]
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Forcing HTTPS
+RewriteCond %{HTTP_HOST} !(.local)
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+ErrorDocument 404 /error.html
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg M604800
+ExpiresByType image/jpeg M604800
+ExpiresByType image/gif M604800
+ExpiresByType image/png M604800
+ExpiresByType text/css M604800
+ExpiresByType text/html M604800
+ExpiresByType application/pdf M604800
+ExpiresByType text/x-javascript M604800
+ExpiresByType application/x-shockwave-flash M604800
+ExpiresByType image/x-icon M604800
+ExpiresDefault M604800
+</IfModule>
+## ENDS STUFF FOR EXPIRES CACHING ##
+
+# Compresses Text, HTML, Javascript, CSS & XML:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+#Redirects
+Redirect 301 /jacs1 /events/juried-art-show
+Redirect 301 /scac-fallcolors2 /events/art-crawl
+Redirect 301 /homepage-top-navigation-bar /
+Redirect 301 /home-sac /
+Redirect 301 /savage-arts-center /classes/class-registration
+Redirect 301 /join-the-fun/membership /council/membership
+Redirect 301 /join-the-fun/volunteer /council/volunteer
+Redirect 301 /join-the-fun /council
+Redirect 301 /business-sponsorships /council/sponsorships
+Redirect 301 /about-us /council
+Redirect 301 /eventsactivities /events
+Redirect 301 /top-get-involved /council/volunteer
+Redirect 301 /press-releases-and-news-stories /press-releases
+Redirect 301 /juried-art-competition/juried-show-judges /events/juried-art-show/juried-show-judges
+Redirect 301 /juried-art-competition/prospectus /events/juried-art-show
+Redirect 301 /juried-art-competition-a-show/past-shows /events/juried-art-show/award-winners-2014
+Redirect 301 /component/content/article/77-savage-arts-council-jump/8-jacs-jump /events/juried-art-show
+#Redirect 301 /savage-arts-council/how-to-get-involved /council/volunteer
+Redirect 301 /savage-arts-council /council

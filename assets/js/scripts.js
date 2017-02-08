@@ -1,10 +1,98 @@
-/* scottcountyartcrawl.com JavaScript Override */
+// SavageArtsCouncil.org Javascript Overrides
+
+//jQueryWrapper... Sanity.
+(function($) {
+
+
 $(document).ready(function() {
-//magic  
-  $('.artcrawl-navbar li.dropdown').hover(function() {
-      $(this).addClass('open');
-  }, function() {
-      $(this).removeClass('open');
+//magic, have at it.
+
+  var dh = $(document).height();
+  var wh = $(window).height();
+
+  if ( wh >= (((dh/3)*2)+100)  ) {
+    $('.arrow-wrap').hide();
+  }
+
+  //Sets a Dark overlay on menu toggle for mobile
+  $('.navbar-toggle').on('click',function(e){
+    $('.bg').toggleClass('active');
+    $('.navbar-toggle').toggleClass('navbar-toggle-hover');
   });
-  $('.cafe-link').on('click',function(event){ga('send','pageview','/gotocafe');event.preventDefault();window.location.href=$(this).prop('href');});
+
+  //Sets Paypal GA Click event.
+	$('.paypal button').on('click', function(e) {
+		ga('send', 'event', 'button', 'click', $(this).html());
+	});
+
+  $('.btn-jacs-register').on('click', function(e) {
+		ga('send', 'event', 'button', 'click', 'Juried Art Show Registration');
+	});
+
+	//Wrap content images in figure, add caption
+	$('.in-content-image').each(function() {
+  	  $(this).wrap('<figure class=in-content-image-wrapper></figure');
+  	  $(this).after('<figcaption>'+$(this).prop('alt').replace(' | ' ,'<br/> ')+'</figcaption>');
+  	  if ($(this).width() >= $(this).height()) {
+    	  $(this).addClass('is-landscape');
+  	  } else {
+    	  $(this).addClass('is-portrait');
+  	  };
+	});
+
+	//show hide caption
+	$('.in-content-image-wrapper').hover(function(){
+  	  $(' figcaption', this).fadeIn(500);
+  	 },function(){
+  	  $(' figcaption', this).fadeOut(500);
+	});
+
+	//init right-nav
+	$('#block-menu-menu-juried-art-menu ul').each(function() {
+  	  $(this).addClass('nav-pills nav-stacked');
+	});
+
+	//artist record header
+	$('.node-type-artist-record h1.page-header').removeClass('sr-only');
+  $('.artist-image-wrapper figcaption').each(function() {
+  	 if ($(this).html()=='') $(this).remove();
+	});
+
+/*
+  //Change Logo/Nav behavior on homepage
+  $('.front .navbar-collapse').each(function() {
+    $(this).removeClass('collapse');
+    $('.navbar-toggle').addClass('hide');
+    $('#navbar').css('position','relative');
+  });
+*/
 });
+
+$(window).scroll( function(){
+
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multiply by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 7;
+
+  //get height of window
+  var windowHeight = $(window).height();
+
+  //set position as percentage of how far the user has scrolled
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
+
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  if (position >= 0) {
+    $('.arrow-wrap').css('opacity', position);
+  } else {
+    $('.arrow-wrap').remove();
+  }
+
+});
+
+
+
+}(jQuery));

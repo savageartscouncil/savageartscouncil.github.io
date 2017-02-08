@@ -1,0 +1,13 @@
+.savage-arts-council-site {
+  &.logged-in {
+    margin-top: 65px;
+    header#navbar {
+      margin-top:65px;
+    }
+    .tabs--primary {
+      width:100%;
+      overflow:hidden;
+      margin-bottom:15px; 
+    }
+  }
+}

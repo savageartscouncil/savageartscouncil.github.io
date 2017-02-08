@@ -1,29 +1,39 @@
+
 html {
   position: relative;
   min-height: 100%;
 }
-body {
+.html.savage-arts-council-site {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   font-size:18px;
-}
-body.home-layout {
-  padding-bottom:90px;
-}
-body.generic-layout {
-  padding-top:51px;
-  padding-bottom:90px;
-}
-a, .navbar-default .artcrawl-navbar-home.navbar-nav>li>a {
-  color:rgb(0,112,131);
-}
-a:hover, .navbar-default .artcrawl-navbar-home.navbar-nav>li>a:hover {
-  color:rgba(0,112,131,.75)
-}
-html,body,h1,h2,h3,h4,.jumbotron p {
-  font-family: 'Average Sans', Helvetica, Arial, sans-serif;
-}
-.crawl-locations li strong > span {
-  display: inline-block;
-  padding: 0 8px;
-  background-color: #828000;
-  color: #fff;
+  padding-bottom: 90px;
+  padding-top:70px;
+  &.front {
+    padding-top:50px;
+  }
+  a, .navbar-default .artcrawl-navbar-home.navbar-nav>li>a {
+    color:$sac-blue;
+  }
+  a:hover, .navbar-default .artcrawl-navbar-home.navbar-nav>li>a:hover {
+    color:$sac-purple;
+  }
+  .btn.btn-primary, .btn.btn-primary:hover {
+    color:#fff;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color:#777;
+    font-weight:300;
+  }
+  .region.region-content {
+    a {
+      text-decoration: underline;
+      &.btn {
+        text-decoration: none;
+      }
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }

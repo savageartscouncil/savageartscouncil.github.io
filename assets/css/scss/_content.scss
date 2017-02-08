@@ -1,24 +1,54 @@
 .logoPlaceholder {
   width:100%;
   height:186px;
-  margin: 1% auto 1% auto;
+  margin: 1% auto 0 auto;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   /* background: transparent url(/assets/images/SCAC-Logo-2014-web.png) no-repeat 50% 50%; */
   background-size:contain;
 }
-.jumbotron {
-  color: white;
-  background-color: rgba(0,112,131,.75);
-  text-shadow: 3px 3px 10px black
+.savage-arts-council-site {
+  
+  .homepage-banner {
+    //margin-bottom: 25px;
+    img {
+      margin: 0 auto;
+      width: 85%;
+    }
+    .homebanner-message {
+      padding: 5px 15px 15px;
+      h2 {
+        font-size:24px;
+      }
+    }
+  }
 }
-.jumbotron h1 {
-  margin-top:0;
+
+.savage-arts-council-site {
+  
+  .breadcrumb {
+    padding: 0 8px 4px 8px;
+    li {
+      font-size: 12px;
+    }
+  }
 }
-.jumbotron .save-the-date {
-  text-align: center;
-  margin-bottom:20px;
+.main-container.container {
+  overflow:hidden;
+}
+.node-type-homepage {
+  .main-container.container {
+    img {
+      max-width: 75%;
+    }
+  }
+}
+.jumbotron + .main-container.container {
+  margin-top:25px;
+}
+.img-responsive {
+  margin: 0 auto;
 }
 .save-the-date > h2 {
   margin-top: 5px;
@@ -29,9 +59,11 @@
 .btn.btn-primary {
   background-color: #90457c;
   border-color: #733458;
+  color:white;
 }
 .btn.btn-primary:hover {
   background-color:#ac759d;
+  color:white;
 }
 .showcase-img {
   padding:25px;
@@ -43,7 +75,8 @@ figcaption {
   margin:5px 0 0 5px;
   color:#777;
 }
-.glyphicon {font-size:12px;top:0.3em;}
+
+// .glyphicon {font-size:12px;top:0.3em;}
 .container .page-header {
   margin-top: 20px;
 }
@@ -74,10 +107,140 @@ figcaption {
 #facebookTab {
   display:block;
   position: fixed;
-  width:105px;
+  margin-top: 48px;
+  width:100px;
   height:20px;
-  right:0;
+  right:8px;
   top:10px;
   overflow: hidden;
   z-index:1030;
+}
+
+// parallax
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 0; //same height as jumbotron
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron .save-the-date {
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.savage-arts-council-site .jumbotron {
+  color: white;
+  margin:0;
+  //jumbotron image
+  background: none $sac-teal no-repeat center center;
+  background-size:cover;
+  padding: 0 0 10px 0;
+  -moz-box-shadow:    inset  0  8px 8px -8px #000, 
+                      inset  0 -8px 8px -8px #000;
+  -webkit-box-shadow: inset  0  8px 8px -8px #000, 
+                      inset  0 -8px 8px -8px #000;
+   box-shadow:        inset  0  8px 8px -8px #000, 
+                      inset  0 -8px 8px -8px #000;
+  section {
+    width: 100%;  
+    padding:0;
+    text-shadow: 2px 2px 3px #222;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color:white;
+    &.feature-intro { 
+      margin:2% 0 0 0;
+    }
+  }
+  h4 {
+    font-size:20px;
+  }
+  img {
+    margin: 10% 0;
+    border:3px solid white;
+    background-color:transparent;
+    padding: 5px;
+    max-width:100%;
+  }
+  a {
+    color:$sac-yellow;
+    &:hover {
+      color:$sac-yellow;
+    }
+  }
+  .save-the-date {
+    text-align: center;
+    margin-bottom:20px;
+  }
+}
+
+.savage-arts-council-site { 
+  .content {
+    h2 {
+      margin-top:5%;
+    }
+  }
+}
+
+.savage-arts-council-site {
+  
+  .well.more-about-well {
+    margin-top:10px;
+  }
+  
+  .table {
+    th {
+      white-space: nowrap;
+      font-weight:bolder;
+    }
+    h3 {
+      margin:5px 0 10px 0;
+    }
+  }
+}
+
+//shading
+.bg.active {
+  height: 100%;
+  z-index:1;
+  background-color:rgba(0,0,0,0.7)
+}
+
+//forms
+.form-inline .form-control {
+  width:auto;
+}
+
+//artist record
+.node-type-artist-record {
+  #page-header {  
+    
+    >.breadcrumb {
+      display:none;
+    }
+  }
+  .node-artist-record {
+    .field {
+      display:block;
+      clear:both;
+      .field-label {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 22px;
+      }
+      >.field-label,>.field-items {
+        display:inline-block;
+        float:left;
+      }
+      &.field-name-field-summary {
+        padding-top: 15px;
+        >.field-label,>.field-items {
+          display:block;
+          float:none;
+        }
+      }
+    }
+  }
 }
