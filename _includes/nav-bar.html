@@ -1,20 +1,51 @@
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" >
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand artcrawl-brand" href="/"><span class="sr-only">Scott County Art Crawl 2014</span></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav artcrawl-navbar">
-            <li class="dropdown"><a href="/">Home</a></li>
-            {% include nav-bar-listing.html %}
+  <header id="navbar" class="navbar navbar-fixed-top navbar-default" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="logo navbar-btn pull-left" title="Home">
+          <img src="/sites/default/files/sacLogo_nav.jpg" alt="Home" />
+          <span class="sr-only">Savage Arts Council</span>
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span>MENU</span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <nav role="navigation">
+          <ul class="menu nav navbar-nav">
+            <li class="first leaf active">
+              <a href="/" class="active">Home</a>
+            </li>
+            <li class="expanded dropdown">
+              <a href="/council/about-us" data-target="#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="first leaf"><a href="/council/about-us" title="About The Council">Our Organization</a></li>
+                <li class="leaf"><a href="/council/board-of-directors">Board of Directors</a></li>
+                <li class="leaf"><a href="/council/sponsor" title="">Become a Sponsor</a></li>
+                <li class="leaf"><a href="/council/membership">Become a Member</a></li>
+                <li class="leaf"><a href="/council/press-releases">Press Releases</a></li>
+                <li class="last leaf"><a href="/council/volunteer">Volunteer</a></li>
+              </ul>
+            </li>
+            <li class="expanded dropdown">
+              <a href="/events" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Events <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="first leaf"><a href="/events/art-wall">Art Wall</a></li>
+                <li class="collapsed"><a href="/events/juried-art-show">Juried Art Show</a></li>
+                <li class="leaf"><a href="/events/art-crawl">Art Crawl</a></li>
+                <li class="last leaf"><a href="/events/lux-string-quartet">Lux String Quartet</a></li>
+              </ul>
+            </li>
+            <li class="expanded dropdown">
+              <a href="/classes" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Activities <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="first leaf"><a href="/classes/open-studio">Open Studio</a></li>
+                <li class="last leaf"><a href="/classes/class-registration">Class Registration</a></li>
+              </ul>
+            </li>
+            <li class="last leaf"><a href="/artist-directory">Artist Directory</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
+  </header>
