@@ -13,6 +13,12 @@ $(document).ready(function() {
   if ( wh >= (((dh/3)*2)+100)  ) {
     $('.arrow-wrap').hide();
   }
+  
+  //Main nav top breadcrumbs
+  $('ul.menu.nav.navbar-nav > li:not(.first),ul.menu.nav.navbar-nav > li:not(.first) li ').each(function() {
+    (location.pathname).indexOf($(' a',this).attr('href')) >= 0 ? 
+        $('> a',this).parent().addClass('active') :  $('> a',this).parent().removeClass('aac');
+  });
 
   //Sets a Dark overlay on menu toggle for mobile
   $('.navbar-toggle').on('click',function(e){
