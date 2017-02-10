@@ -1,6 +1,6 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^savageartscouncil.com [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.savageartscouncil.org [NC]
+RewriteCond %{HTTP_HOST} ^www.savageartscouncil.com [NC]
 RewriteRule ^(.*)$ http://savageartscouncil.org/$1 [L,R=301,NC]
 
 RewriteEngine On
