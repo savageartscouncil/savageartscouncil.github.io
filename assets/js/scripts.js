@@ -74,6 +74,29 @@ $(document).ready(function() {
 */
 });
 
+
+$(document).ready(function() {
+  //https://api.instagram.com/v1/users/self/media/recent?access_token=3272467012.c9e0507.cee9b966c7274a9c91a58f6b8fe82fe6
+  // /ig_api_json.json
+  $('#instagramFeed').each(function() {
+    $.ajax({
+      type: 'POST',
+      crossDomain: true,
+      dataType: 'json',
+      url: 'https://api.instagram.com/v1/users/self/media/recent?count=18&access_token=3272467012.c9e0507.cee9b966c7274a9c91a58f6b8fe82fe6&callback=?',
+      success: function(data) {
+        var jsonData = (data.data);
+        for(var i=0; i < jsonData.length; i++) {
+          var igo = jsonData[i];
+          $('#instagramFeed').append('<div class="col-xs-4 col-sm-3 col-md-2" style="overflow:hidden;"><a href="' + igo.link + '" target="_blank" class="thumbnail"><img src="' + igo.images.thumbnail.url + '" title="' + igo.caption.text + '" alt="instagram post " /><span><span class="glyphicon glyphicon-heart"></span> ' + igo.likes.count + '</span> <span style="float:right"><span class="glyphicon glyphicon-comment"></span> ' + igo.comments.count + '</span> </a></div>' );
+        }
+      }
+    });
+  });
+  
+});
+
+
 $(window).scroll( function(){
 
   //get scroll position
