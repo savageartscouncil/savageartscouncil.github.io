@@ -99,6 +99,48 @@ $(window).scroll( function(){
 
 });
 
+function buildArtistThumbnail(image) {
+  var thumbnailStruct;
+  return thumbnailStruct;
+}
+
+function buildEmailAddress(email) {
+  var emailStruct;
+  emailStruct = '<span><a href="mailto:'+email+'">'+email+'</a></span>';
+  return emailStruct;
+}
+
+function buildWebUrl(url) {
+  var urlStruct;
+  urlStruct = '<span><a href="'+url+'">'+url+'</a></span>';
+  return urlStruct;
+}
+
+//Artist Directory
+$(document).ready(function() {
+  $('#artistDirectory').each(function() {
+    $.ajax({
+      type: 'POST',
+      crossDomain: true,
+      dataType: 'json',
+      url: '/assets/js/artists.json',
+      success: function(data) {
+        var jsonData = (data.data);
+        for(var i=0; i < jsonData.length; i++) {
+          var artist = jsonData[i];
+          var artistEmail, artistURL, thumbnail;
+          var artistFullName = '<span>' + artist.firstname + ' ' + artist.lastname + '</span>';
+          artist.image.url != '' ? thumbnail = '<figure><img src="'+artist.image.url+'" alt="'+ artist.firstname + ' ' + artist.lastname +' work sample" /><figcaption>'+artist.image.title+'</figcaption></figure>' : thumbnail = '';
+          artist.email != '' ? artistEmail = buildEmailAddress(artist.email) : artistEmail = '';
+          artist.url != '' ? artistURL = buildWebUrl(artist.url) : artistURL = '';
+          $('#artistDirectory').append('<li>' + thumbnail + artistFullName + artistEmail + artistURL + '</li>');
+          //$('#artistDirectory').append('<div class="col-xs-4 col-sm-3 col-md-2" style="overflow:hidden;"><a href="' + igo.link + '" target="_blank" class="thumbnail"><img src="' + igo.images.thumbnail.url + '" title="' + igo.caption.text + '" alt="instagram post " /><span><span class="glyphicon glyphicon-heart"></span> ' + igo.likes.count + '</span> <span style="float:right"><span class="glyphicon glyphicon-comment"></span> ' + igo.comments.count + '</span> </a></div>' );
+        }
+      }
+    });
+  });
+  
+});
 
 
 }(jQuery));
