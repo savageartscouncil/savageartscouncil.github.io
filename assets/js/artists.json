@@ -63,7 +63,7 @@
         "title":""
       },
       "medium":"Watercolor",
-      "url":"http://christincongdon.weebly.com",
+      "url":"http://www.congdonillustration.com/",
       "email":"Congdon476@gmail.com"
     },
     {
@@ -82,7 +82,7 @@
       "lastname":"Rogness",
       "image":{
         "url":"/sites/default/files/artists-directory/Bridge-Strolling.jpg",
-        "title":""
+        "title":"Bridge Strolling"
       },
       "medium":"Photography",
       "url":"http://www.facebook.com/DRogPhotography",
@@ -115,241 +115,230 @@
       "lastname":"Stewart",
       "image":{
         "url":"/sites/default/files/artists-directory/devin%202.jpg",
-        "title":""
+        "title":"Devin2"
       },
       "medium":"Drawings and Paintings",
       "url":"https://www.facebook.com/pages/devinpaints/109154465803854",
       "email":"junephillipp@integraonline.com"
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Franklin",
+      "lastname":"Haws",
+      "image":{
+        "url":"/sites/default/files/artists-directory/streamoflife.jpg",
+        "title":"Stream of Life"
+      },
+      "medium":"Digital Illustration",
+      "url":"http://www.franklinhawsartwork.com",
+      "email":"franklinhawssrt@hotmail.com"
+    },
+    {
+      "firstname":"Gary",
+      "lastname":"Conniff",
       "image":{
         "url":"",
         "title":""
       },
-      "medium":"",
+      "medium":"Oil Paintings",
       "url":"",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Jeff",
+      "lastname":"Luedloff",
+      "image":{
+        "url":"/sites/default/files/artists-directory/Luedloff.jpg",
+        "title":""
+      },
+      "medium":"Wood",
+      "url":"",
+      "email":"jlued@q.com"
+    },
+    {
+      "firstname":"Joann",
+      "lastname":"Green",
       "image":{
         "url":"",
         "title":""
       },
-      "medium":"",
+      "medium":"Jewelry",
+      "url":"/sites/default/files/artists-directory/JoannGreen.jpg",
+      "email":""
+    },
+    {
+      "firstname":"Joel",
+      "lastname":"Arnold",
+      "image":{
+        "url":"/sites/default/files/artists-directory/JoelArnold_0.jpg",
+        "title":""
+      },
+      "medium":"Author",
+      "url":"http://authorjoelarnold.blogspot.com",
+      "email":""
+    },
+    {
+      "firstname":"Kelly",
+      "lastname":"Schamberger",
+      "image":{
+        "url":"/sites/default/files/artists-directory/KellySchamberger.jpg",
+        "title":""
+      },
+      "medium":"Acrylic and Colored Pencil",
       "url":"",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Lise",
+      "lastname":"Anderson",
+      "image":{
+        "url":"/sites/default/files/artists-directory/Lise.jpg",
+        "title":""
+      },
+      "medium":"Jewelry",
+      "url":"http://www.raspberryfieldsdesign.com",
+      "email":"liseandersonrfd@gmail.com"
+    },
+    {
+      "firstname":"Lucy",
+      "lastname":"LeMay",
+      "image":{
+        "url":"/sites/default/files/artists-directory/Marooned%20.jpg",
+        "title":"Marooned"
+      },
+      "medium":"Watercolor",
+      "url":"http://www.llemaystudio.com",
+      "email":"lucylemay@gmail.com"
+    },
+    {
+      "firstname":"Maria",
+      "lastname":"Durnbaugh",
+      "image":{
+        "url":"/sites/default/files/artists-directory/Durnbaugh.jpg",
+        "title":""
+      },
+      "medium":"Stained Glass, Mosaic, Mixed Media, Photography",
+      "url":"http://www.choochbean.com",
+      "email":"choochbean@gmail.com"
+    },
+    {
+      "firstname":"Marilyn",
+      "lastname":"Maltby",
+      "image":{
+        "url":"/sites/default/files/artists-directory/maltby.jpg",
+        "title":"Allium proliferum bulblets"
+      },
+      "medium":"Botanical art in watercolor, color pencil, graphite",
+      "url":"http://wild-wild-woods.blogspot.com/p/artist.html",
+      "email":""
+    },
+    {
+      "firstname":"Mary",
+      "lastname":"Hamre",
       "image":{
         "url":"",
         "title":""
       },
-      "medium":"",
+      "medium":"Mixed Media and Jewelry",
       "url":"",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Melissa",
+      "lastname":"Mickelson",
       "image":{
-        "url":"",
+        "url":"/sites/default/files/artists-directory/MelissaMickelson.jpg",
         "title":""
       },
-      "medium":"",
-      "url":"",
+      "medium":"Drawing, Painting, Pyrography",
+      "url":"http://www.mnmickelson.weebly.com",
+      "email":"mnmickelson@gmail.com"
+    },
+    {
+      "firstname":"Michael",
+      "lastname":"Leek",
+      "image":{
+        "url":"/sites/default/files/artists-directory/Leek%20-%20Marina%20della%20Corta%20Lipari.jpg",
+        "title":"Marina della Corta Lipari"
+      },
+      "medium":"Watercolor, Ink and Marker Art",
+      "url":"http://www.facebook.com/RMichaelLeekDraws",
+      "email":"mleek6353@gmail.com"
+    },
+    {
+      "firstname":"Nancy",
+      "lastname":"Bergman",
+      "image":{
+        "url":"/sites/default/files/artists-directory/NancyBergman.jpg",
+        "title":""
+      },
+      "medium":"Watercolor",
+      "url":"http://www.nancybergmanstudio.com",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Pat",
+      "lastname":"Dennis",
       "image":{
         "url":"",
         "title":""
       },
-      "medium":"",
-      "url":"",
+      "medium":"Author",
+      "url":"http://www.patdennis.com",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Richard",
+      "lastname":"Mittelstadt",
       "image":{
-        "url":"",
-        "title":""
+        "url":"/sites/default/files/artists-directory/FOR-THE-JOY-OF-IT-ALL.jpg",
+        "title":"For the Joy of it All"
       },
-      "medium":"",
-      "url":"",
+      "medium":"Acrylic",
+      "url":"http://www.facebook.com/mittelstadtartworks",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Rose-Marie",
+      "lastname":"James",
       "image":{
-        "url":"",
+        "url":"/sites/default/files/artists-directory/RosieJames.jpg",
         "title":""
       },
-      "medium":"",
-      "url":"",
+      "medium":"Fused Art Glass",
+      "url":"http://Dreaminglassstudio.com",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Susan",
+      "lastname":"Shroyer",
       "image":{
-        "url":"",
+        "url":"/sites/default/files/artists-directory/SusanShroyer.jpg",
         "title":""
       },
-      "medium":"",
+      "medium":"Stone, Silver Jewelry",
       "url":"",
+      "email":"sshroyer@mchsi.com"
+    },
+    {
+      "firstname":"Thomas",
+      "lastname":"Fluharty",
+      "image":{
+        "url":"/sites/default/files/artists-directory/OldMcCartney.jpg",
+        "title":"Old McCartney"
+      },
+      "medium":"Oil Paintings",
+      "url":"http://www.thomasfluharty.com",
       "email":""
     },
     {
-      "firstname":"",
-      "lastname":"",
+      "firstname":"Tracey",
+      "lastname":"Sandoval",
       "image":{
-        "url":"",
-        "title":""
+        "url":"/sites/default/files/artists-directory/traceyFoxberryDesignsPendant.jpg",
+        "title":"Jean"
       },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
-      "email":""
-    },
-    {
-      "firstname":"",
-      "lastname":"",
-      "image":{
-        "url":"",
-        "title":""
-      },
-      "medium":"",
-      "url":"",
+      "medium":"Clay, Resin, Acrylic, Ink",
+      "url":"http://foxberrydesigns.com",
       "email":""
     }
 ]}
