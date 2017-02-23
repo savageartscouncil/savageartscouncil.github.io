@@ -99,6 +99,44 @@ $(window).scroll( function(){
 
 });
 
+function buildEmailAddress(email) {
+  var emailStruct;
+  emailStruct = '<a href="mailto:'+email+'"><span class="glyphicon glyphicon-envelope"></span></a>';
+  return emailStruct;
+}
+
+function buildWebUrl(url) {
+  var urlStruct;
+  urlStruct = '<a href="'+url+'" target="_blank"><span class="glyphicon glyphicon-globe"></span></a>';
+  return urlStruct;
+}
+
+//Artist Directory
+$(document).ready(function() {
+  $('#artistDirectory').each(function() {
+    $.ajax({
+      type: 'POST',
+      crossDomain: true,
+      dataType: 'json',
+      url: '/assets/js/artists.json',
+      success: function(data) {
+        var jsonData = (data.data);
+        for(var i=0; i < jsonData.length; i++) {
+          var artist = jsonData[i];
+          if (artist.image.url != '') {
+            var artistEmail, artistURL, thumbnail;
+            var artistFullName = '<span>' + artist.firstname + ' ' + artist.lastname + '</span>';
+            artist.image.url != '' ? thumbnail = '<figure><img src="'+artist.image.url+'" alt="'+ artist.firstname + ' ' + artist.lastname +' work sample" /><figcaption>'+artist.image.title+'</figcaption></figure>' : thumbnail = '';          
+            artist.email != '' ? artistEmail = buildEmailAddress(artist.email) : artistEmail = '';
+            artist.url != '' ? artistURL = buildWebUrl(artist.url) : artistURL = '';
+            $('#artistDirectory').append('<li><div>' + thumbnail + '<div class="artistInfo">' + artistFullName + artistEmail + artistURL + '</div>' + '</div></li>');
+          };
+        }
+      }
+    });
+  });
+  
+});
 
 
 }(jQuery));
