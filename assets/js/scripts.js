@@ -47,7 +47,7 @@ $(document).ready(function() {
 	});
 
 	//show hide caption
-	$('.in-content-image-wrapper').hover(function(){
+	$('.in-content-image-wrapper-disabled').hover(function(){
   	  $(' figcaption', this).fadeIn(500);
   	 },function(){
   	  $(' figcaption', this).fadeOut(500);
