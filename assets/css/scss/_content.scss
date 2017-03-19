@@ -1,7 +1,7 @@
 .logoPlaceholder {
   width:100%;
   height:186px;
-  margin: 1% auto 0 auto;
+  margin: 0 auto 0 auto;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -66,10 +66,10 @@
   color:white;
 }
 .showcase-img {
-  padding:25px;
+  padding:5px;
   background-color: #eee;
-  -webkit-box-shadow: 5px 5px 10px #333;
-  box-shadow: 5px 5px 10px #333;
+  //-webkit-box-shadow: 5px 5px 10px #333;
+  //box-shadow: 5px 5px 10px #333;
 }
 figcaption {
   margin:5px 0 0 5px;

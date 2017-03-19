@@ -64,3 +64,5 @@ Redirect 301 /juried-art-competition-a-show/past-shows /events/juried-art-show/a
 Redirect 301 /component/content/article/77-savage-arts-council-jump/8-jacs-jump /events/juried-art-show
 #Redirect 301 /savage-arts-council/how-to-get-involved /council/volunteer
 Redirect 301 /savage-arts-council /council
+Redirect 301 /art-crawl /events/art-crawl
+Redirect 301 /crawl /events/art-crawl

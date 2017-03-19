@@ -36,4 +36,10 @@ html {
       text-decoration: none;
     }
   }
+  .crawl-locations li > span {
+    display: inline-block;
+    padding: 0 8px;
+    background-color: #828000;
+    color: #fff;
+  }
 }
