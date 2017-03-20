@@ -10,6 +10,15 @@
           display:block;
         }
       }
+      .save-the-date {
+        h1 {
+          font-size:55px;
+        } 
+        h2 {
+          font-size:40px;
+        }
+        margin-bottom:0;
+      }
     }    
     #footer {
       height: 45px;
@@ -36,7 +45,6 @@
 }
 @media all and (min-width:415px) and (max-width:767px) {
   .savage-arts-council-site {
-    
     .jumbotron {
       
       section {
@@ -54,6 +62,13 @@
           max-width: 55%;
         }
       }
+    }
+  }
+}
+@media all and (max-width:520px) {
+  .savage-arts-council-site {
+    &.html {
+      padding-top:40px;
     }
   }
 }

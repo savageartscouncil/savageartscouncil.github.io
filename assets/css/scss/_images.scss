@@ -3,7 +3,7 @@
 figure {
   position:relative;
   text-align:right;
-  > figcaption {
+  > figcaption.watermarked {
     position:absolute;
     top:0;
     right:0;
@@ -45,4 +45,8 @@ figure {
       margin:-10px 15px 0 0;
     }
   }
+}
+.img-responsive.img-balanced {
+  vertical-align: middle;
+  height:inherit;
 }
