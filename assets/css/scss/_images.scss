@@ -50,3 +50,46 @@ figure {
   vertical-align: middle;
   height:inherit;
 }
+
+#instagramFeed {
+  width:100%;
+  max-width: 180px;
+  margin: 2% auto 5%;
+  .item {
+    a {
+      text-decoration: none;
+      position:relative;
+      overflow:hidden;
+      border: 1px solid #ddd;
+      display:block;
+      padding: 10px 10px 3px;
+      margin-right:10px;
+      background-color: #fff;
+      .igWrapper {
+        height:90px;
+        position:relative;
+        overflow:hidden;
+        margin: 5px auto;
+        img {
+          width:100%;
+          max-width:100%;
+          position:absolute;
+        }
+      }
+    }
+  }
+  &.igFeed-large {
+    max-width: 360px;
+    
+    .item {
+      a {
+        padding: 20px 20px 5px;
+        margin-right: 20px;
+        .igWrapper {
+          height: 180px;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
