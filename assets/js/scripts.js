@@ -88,7 +88,7 @@ $(document).ready(function() {
         var jsonData = (data.data);
         for(var i=0; i < jsonData.length; i++) {
           var igo = jsonData[i];
-          $('#instagramFeed').append('<div class="col-xs-4 col-sm-3 col-md-2" style="overflow:hidden;"><a href="' + igo.link + '" target="_blank" class="thumbnail"><img src="' + igo.images.thumbnail.url + '" title="' + igo.caption.text + '" alt="instagram post " /><span><span class="glyphicon glyphicon-heart"></span> ' + igo.likes.count + '</span> <span style="float:right"><span class="glyphicon glyphicon-comment"></span> ' + igo.comments.count + '</span> </a></div>' );
+          $('#instagramFeed').append('<div class="col-xs-4 col-sm-3 col-md-2"><a href="' + igo.link + '" target="_blank" class="thumbnail1"><div class="igWrapper"><img src="' + igo.images.low_resolution.url + '" title="' + igo.caption.text + '" alt="instagram post " /></div><span><span class="glyphicon glyphicon-heart"></span> ' + igo.likes.count + '</span> <span style="float:right"><span class="glyphicon glyphicon-comment"></span> ' + igo.comments.count + '</span> </a></div>' );
         }
       }
     });

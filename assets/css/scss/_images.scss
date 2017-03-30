@@ -46,3 +46,21 @@ figure {
     }
   }
 }
+
+#instagramFeed {
+  a {
+    position:relative;
+    overflow:hidden;
+    .igWrapper {
+      border: 1px solid #ddd;
+      height:120px;
+      position:relative;
+      overflow:hidden;
+      margin: 5px auto;
+      img {
+        width:100%;
+        position:absolute;
+      }
+    }
+  }
+}
