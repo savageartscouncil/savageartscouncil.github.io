@@ -85,12 +85,16 @@ $(document).ready(function() {
       dataType: 'json',
       url: 'https://api.instagram.com/v1/users/self/media/recent?count=all&access_token=3272467012.c9e0507.cee9b966c7274a9c91a58f6b8fe82fe6&callback=?',
       success: function(data) {
+        $('#instagramFeed .carousel-inner .ig-icon-preload').remove();
         var jsonData = (data.data);
         for(var i=0; i < jsonData.length; i++) {
           var igo = jsonData[i];
           $('#instagramFeed .carousel-inner').append('<div class="item"><a href="' + igo.link + '" target="_blank" class="thumbnail1"><div class="igWrapper"><img src="' + igo.images.standard_resolution.url + '" title="' + igo.caption.text + '" alt="instagram post " /></div><span><span class="glyphicon glyphicon-heart"></span> ' + igo.likes.count + '</span> <span style="float:right"><span class="glyphicon glyphicon-comment"></span> ' + igo.comments.count + '</span> </a></div>' );
         }
         $('#instagramFeed .carousel-inner .item:first-child').addClass('active');
+      }, error: function(XMLHttpRequest, textStatus, errorThrown) {
+        //remove Instagram feed container if it's failing
+        $('#instagramFeed').parent().remove();
       }
     });
   });
