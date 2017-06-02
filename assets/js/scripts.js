@@ -143,7 +143,7 @@ function buildWebUrl(url) {
 $(document).ready(function() {
   $('#artistDirectory').each(function() {
     $.ajax({
-      type: 'POST',
+      type: 'GET',
       crossDomain: true,
       dataType: 'json',
       url: '/assets/js/artists.json',
