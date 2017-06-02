@@ -14,7 +14,7 @@ plugins_dir:  ./_plugins
 
 future:      true
 lsi:         false
-highlighter: true
+highlighter: rouge
 markdown:    kramdown
 permalink:   /posts/:month-:day-:year-:title.html
 #relative_permalinks: false
